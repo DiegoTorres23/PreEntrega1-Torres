@@ -9,9 +9,13 @@ $bodyColor: black;
     background-color:$headerColor;
 }
 header nav{
-    a{
+    .containerNav{
+        margin-left: 10%;
+        font-family:'Playpen Sans', cursive;
+    }
+    .aTitle{
     color: white;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     text-decoration: none;
     font-family:'Playpen Sans', cursive;
@@ -21,6 +25,37 @@ header nav{
             height: 75px;
             margin: 1px 10px 1px 5px;
             }
+    }
+    .btnR{
+        background-color: #0dcaf0;
+        color: white;
+    }
+    .aLink{
+        color: white;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-decoration: none;
+        font-family:'Playpen Sans', cursive;
+        align-items: center;
+        &:hover{
+            color: #0dcaf0;
+        }
+    }
+    .despliegueList1{
+        background-color:$headerColor;
+        .aDespliegue{
+            &:hover{
+                background-color: #0dcaf0;
+            }
+        }
+    }
+    .despliegueList2{
+        background-color:$headerColor;
+        .aDespliegue{
+            &:hover{
+                background-color: #0dcaf0;
+            }
+        }
     }
 }
 main{
@@ -35,7 +70,7 @@ main{
         display: flex;
         justify-content: center;
         h1{
-            font-size: 4.2rem;
+            font-size: 4.4rem;
             color: #ffffff;
             font-weight: bold;
             margin: 20% auto;
