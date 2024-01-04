@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Playpen Sans", cursive;
+  background-color: #0f1d24;
+}
+
 .headerNav {
   background-color: #0f1d24;
 }
@@ -26,7 +31,7 @@ header nav .aTitle img {
   margin: 1px 10px 1px 5px;
 }
 header nav .btnR {
-  background-color: #0dcaf0;
+  background-color: #0f1d24;
   color: white;
 }
 header nav .aLink {
@@ -71,6 +76,22 @@ main .containerIndex h1 {
   margin: 20% auto;
   color: #ffffff;
   text-shadow: 1px 1px 0 #000, -1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000;
+}
+
+main section div .pCard {
+  border-color: #0dcaf0;
+  border-width: 3px;
+}
+main section div .pCard .pCardTitle {
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+main section div .pCard .pBtn {
+  border-color: black;
+}
+main section div .pCard .pBtn:hover {
+  background-color: white;
+  color: #0f1d24;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,12 +1,17 @@
-$headerColor:#0f1d24;
-$bodyColor: black; 
+$generalColor:#0f1d24;
+$hoverColorInfo: #0dcaf0;
+
 *{
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+body{
+    font-family:'Playpen Sans', cursive;
+    background-color:$generalColor ;
+}
 .headerNav{
-    background-color:$headerColor;
+    background-color:$generalColor;
 }
 header nav{
     .containerNav{
@@ -27,7 +32,7 @@ header nav{
             }
     }
     .btnR{
-        background-color: #0dcaf0;
+        background-color: $generalColor;
         color: white;
     }
     .aLink{
@@ -38,22 +43,22 @@ header nav{
         font-family:'Playpen Sans', cursive;
         align-items: center;
         &:hover{
-            color: #0dcaf0;
+            color:$hoverColorInfo;
         }
     }
     .despliegueList1{
-        background-color:$headerColor;
+        background-color:$generalColor;
         .aDespliegue{
             &:hover{
-                background-color: #0dcaf0;
+                background-color: $hoverColorInfo;
             }
         }
     }
     .despliegueList2{
-        background-color:$headerColor;
+        background-color:$generalColor;
         .aDespliegue{
             &:hover{
-                background-color: #0dcaf0;
+                background-color: $hoverColorInfo;
             }
         }
     }
@@ -83,4 +88,25 @@ main{
         }
     }
     
+}
+main{
+    section{
+        div{
+            .pCard{
+                border-color:$hoverColorInfo ;
+                border-width: 3px;
+                .pCardTitle{
+                    font-weight: bold;
+                    font-size: 1.4rem;
+                }
+                .pBtn{
+                    border-color: black;
+                    &:hover{
+                        background-color: white;
+                        color:$generalColor ;
+                    }
+                }
+            }
+        }
+    }
 }
