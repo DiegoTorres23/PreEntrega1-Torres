@@ -1,4 +1,4 @@
-let nombre= prompt("Bienvenido al Simulador de Cuotas de Paradise Reef, por favor Ingrese su Nombre")
+let cantidadCuota
 let montoLeuco= 50000
 let montoPayaso= 35000
 let montoXanthurum= 60000
@@ -6,8 +6,8 @@ let montoBallesta= 45000
 let a=3
 let b=6
 let c=12
+let nombre= prompt("Bienvenido al Simulador de Cuotas de Paradise Reef, por favor Ingrese su Nombre")
 let opcion= prompt(`Muchas Gracias ${nombre}, ahora por favor elige alguno de nuestros peces en Stock y de ese modo calcularemos el monto y numero de cuotas: \n\n1- Cirujano Leuco $${montoLeuco} \n2- Pez Payaso $${montoPayaso} \n3- Cirujano Xanthurum $${montoXanthurum} \n4- Pez Ballesta Payaso $${montoBallesta}`)
-let cantidadCuota
 
 const formaPago = ()=>{
     while(opcion==1 || opcion==2 || opcion==3 || opcion==4) {
