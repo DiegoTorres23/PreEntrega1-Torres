@@ -21,7 +21,7 @@ const formaPago = ()=>{
          }else if(tipoTarjeta==3){
              cantidadCuota = prompt(`Muy Bien, Usted selecciono la opcion ${tipoTarjeta}, por ultimo indiquenos la cantidad de cuotas con las que desea abonar: \n\n1- ${a} Cuotas sin Interes\n2- ${b} Cuotas sin Interes \n3- ${c} cuotas sin Interes`)
             return cantidadCuota
-         }else ("Por Favor seleccione una Opcion correcta")
+         }else alert("Por Favor seleccione una Opcion correcta");
     } 
 }
 const calcularCuotaOpcion1 = ()=>{
@@ -34,7 +34,7 @@ const calcularCuotaOpcion1 = ()=>{
     }else if (opcion==1 && cantidadCuota==3){
         let resultado3= (montoLeuco/c);
         alert(`Tendras que abonar ${c} Cuotas de $${Math.round(resultado3)}`)
-    }else("Por favor ingrese una opcion Correcta")
+    }else alert("Por favor ingrese una opcion Correcta");
 }
 const calcularCuotaOpcion2 = () =>{
     if(opcion==2 && cantidadCuota == 1){
@@ -46,7 +46,7 @@ const calcularCuotaOpcion2 = () =>{
     }else if (opcion==2 && cantidadCuota == 3){
         let resultado3= montoPayaso/c
         alert(`Tendras que abonar ${c} Cuotas de $${Math.round(resultado3)}`)
-    }else("Por favor ingrese una opcion Correcta")
+    }else alert("Por favor ingrese una opcion Correcta");
 }
 const calcularCuotaOpcion3 = () =>{
     if(opcion==3 && cantidadCuota == 1){
@@ -58,7 +58,7 @@ const calcularCuotaOpcion3 = () =>{
     }else if (opcion==3 && cantidadCuota == 3){
         let resultado3= montoXanthurum/c
         alert(`Tendras que abonar ${c} Cuotas de $${Math.round(resultado3)}`)
-    }else("Por favor ingrese una opcion Correcta")
+    }else alert("Por favor ingrese una opcion Correcta");
 }
 const calcularCuotaOpcion4 = () =>{
     if(opcion==4 && cantidadCuota == 1){
@@ -70,7 +70,7 @@ const calcularCuotaOpcion4 = () =>{
     }else if (opcion==4 && cantidadCuota == 3){
         let resultado3= montoBallesta/c
         alert(`Tendras que abonar ${c} Cuotas de $${Math.round(resultado3)}`)
-    }else("Por favor ingrese una opcion Correcta")
+    }else alert("Por favor ingrese una opcion Correcta");
 }
 
 switch(opcion){
