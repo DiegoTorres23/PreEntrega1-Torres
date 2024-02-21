@@ -101,7 +101,7 @@ main{
                 }
                 .pBtn{
                     border-color: black;
-                    &:hover{
+                    &:active{
                         background-color: white;
                         color:$generalColor ;
                     }

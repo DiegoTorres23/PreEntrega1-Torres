@@ -89,7 +89,7 @@ main section div .pCard .pCardTitle {
 main section div .pCard .pBtn {
   border-color: black;
 }
-main section div .pCard .pBtn:hover {
+main section div .pCard .pBtn:active {
   background-color: white;
   color: #0f1d24;
 }
