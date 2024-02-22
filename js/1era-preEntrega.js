@@ -1,4 +1,4 @@
-let cantidadCuota
+/*let cantidadCuota
 let montoLeuco= 50000
 let montoPayaso= 35000
 let montoXanthurum= 60000
@@ -94,4 +94,4 @@ switch(opcion){
         formaPago()
         calcularCuotaOpcion4()
         break;
-}
+}*/
