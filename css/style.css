@@ -13,6 +13,9 @@ body {
   background-color: #0f1d24;
 }
 
+header nav .popText {
+  font-size: 1.4rem;
+}
 header nav .containerNav {
   margin-left: 10%;
   font-family: "Playpen Sans", cursive;
@@ -127,6 +130,23 @@ main section div .pCard .pBtn {
 main section div .pCard .pBtn:active {
   background-color: white;
   color: #0f1d24;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    font-size: 1rem;
+    text-align: center;
+    margin-right: 5%;
+  }
+}
+.container .imgTable {
+  margin-left: 3rem;
+}
+@media screen and (max-width: 480px) {
+  .container .imgTable {
+    margin-left: 0.2rem;
+    width: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

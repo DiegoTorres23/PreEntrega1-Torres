@@ -2,12 +2,12 @@ const renderCarrito=()=>{
     const peces= obtenerCarritoLS()
     let contenido="";
     if(totalProductos()>0){
-        contenido =`<table class=" m-2">
-        <tbody class="">;`
+        contenido =`<table class=" m-2" >
+        <tbody>;`
         for (const produ of peces){
     
             contenido+=`<tr class="text-white pCard">
-                 <td><img src="${produ.imagen}" class="img-fluid ms-5" alt="${produ.Nombre}" width="110" height="auto"></td>
+                 <td><img src="${produ.imagen}" class="imgTable img-fluid" alt="${produ.Nombre}" width="110" height="auto"></td>
                 <td class="pt-3"> <b>${produ.Nombre}</b> </td>
                  <td class="pt-3"><b>Precio:$</b> ${produ.precio} </td>
                 <td class="pt-2"><a href="#" class="text-white" onclick="eliminarProductoCarrito(${produ.id})"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-trash3" viewBox="0 0 16 16">
@@ -22,9 +22,8 @@ const renderCarrito=()=>{
                 </tr>
             </tbody>
         </table>`;
-    
     }else{
-        contenido=`<h1 class="text-white text-center m-5 p-5">No Hay Productos en el Carrito✖️</h1>`
+        contenido=`<h1 class="h1Carrito text-white text-center m-5 p-5">No Hay Productos en el Carrito✖️</h1>`
     }
     document.getElementById("productosCarrito").innerHTML=contenido;
 }
