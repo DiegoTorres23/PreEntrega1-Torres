@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/LOGO PARADISE REEF 3 AI.png" type="img-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Paradise Reef🐋</title>
+</head>
+<body>
+  <header>
+    <nav class= "headerNav navbar navbar-expand-lg bg-body-">
+        <div class="container-fluid">
+          <a class="aTitle navbar"><img src="../img/LOGO PARADISE REEF 3 AI.png" alt="logoParadiseReef">Paradise Reef</a>
+          <button class="btnR navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="containerNav collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+              <li class="nav-item">
+                <a class="mx-3 aLink nav active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="mx-3 aLink nav" href="">Nosotros</a>
+              </li>
+              <li class="mx-3 nav-item dropdown">
+                <a class="aLink nav dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Seres Vivos
+                </a>
+                <ul class="despliegueList1 dropdown-menu">
+                  <li><a class="aDespliegue text-light dropdown-item" href="../pages/peces.html">Peces</a></li>
+                  <li><hr class="bg-info dropdown-divider"></li>
+                  <li><a class="aDespliegue text-light dropdown-item" href="./otrosProductos.html">Otros Productos</a></li>
+                  <li><hr class="bg-info dropdown-divider"></li>
+                  <li><a class="aDespliegue text-light dropdown-item" href="#">Invertebrados</a></li>
+                  <li><hr class="bg-info dropdown-divider"></li>
+                  <li><a class="aDespliegue text-light dropdown-item" href="#">Microfauna</a></li>
+                </ul>
+                <li class="mx-3 nav-item dropdown">
+                  <a class="aLink nav dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Acuarios
+                  </a>
+                  <ul class="despliegueList2 dropdown-menu">
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Aquascaping</a></li>
+                    <li><hr class="bg-info dropdown-divider"></li>
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Sustrato</a></li>
+                    <li><hr class="bg-info dropdown-divider"></li>
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Urnas</a></li>
+                    <li><hr class="bg-info dropdown-divider"></li>
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Bacterias</a></li>
+                    <li><hr class="bg-info dropdown-divider"></li>
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Muebles</a></li>
+                    <li><hr class="bg-info dropdown-divider"></li>
+                    <li><a class="aDespliegue text-light dropdown-item" href="#">Sump</a></li>
+                  </ul>
+              </li>
+            </ul>
+            <div class="iconFavorito">
+              <a href="./favoritos.html" class="text-decoration-none aLink">
+                <span id="favoritoImg" class="position-start top-0 start-100 translate-middle rounded-pill">
+                0
+                <span class="visually-hidden"></span>
+                </span><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-star" viewBox="0 0 16 16">
+                  <path d="M2.866 14.85c-.078.444.36.791.746.593l4.39-2.256 4.389 2.256c.386.198.824-.149.746-.592l-.83-4.73 3.522-3.356c.33-.314.16-.888-.282-.95l-4.898-.696L8.465.792a.513.513 0 0 0-.927 0L5.354 5.12l-4.898.696c-.441.062-.612.636-.283.95l3.523 3.356-.83 4.73zm4.905-2.767-3.686 1.894.694-3.957a.56.56 0 0 0-.163-.505L1.71 6.745l4.052-.576a.53.53 0 0 0 .393-.288L8 2.223l1.847 3.658a.53.53 0 0 0 .393.288l4.052.575-2.906 2.77a.56.56 0 0 0-.163.506l.694 3.957-3.686-1.894a.5.5 0 0 0-.461 0z"/>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+  </header>
+  <main>
+    <h1 class="title text-center text-info mt-4"><b>Proximos Ingresos</b></h1>
+    <div id="containerProductos" class="row mt-5 m-3"></div>
+
+
+  </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <script src="../js/renderOtrosProductos.js"></script>
+    <script src="../js/otrosProductos.js"></script>
+</body>
+</html>
