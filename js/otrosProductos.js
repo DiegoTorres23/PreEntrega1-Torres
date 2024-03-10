@@ -27,10 +27,10 @@ const guardarFav = (id) => {
             console.log(arrayFavoritos)
             favoritosLS(arrayFavoritos)
             renderNumFavorito()
+            notificacion()
         })
     }
 }
-
 
 const renderNumFavorito=()=>{
     document.getElementById("favoritoImg").innerHTML=totalFavoritos()
@@ -43,5 +43,11 @@ const eliminarProductoFavoritos=(id)=>{
     renderFav()
 }
 
+const notificacion=()=>{
+    Swal.fire({
+        title: "Producto Agregado Correctamente a Favoritos",
+        icon: "success"
+      });
+}
 
 
