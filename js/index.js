@@ -36,7 +36,7 @@ const guardarProducto = (id) => {
     if (totalProductos()>0) {
       renderPopUp()
       renderNumPopUp()
-      notificacion()
+      notificacionPeces()
     }
   }
 }
@@ -77,7 +77,7 @@ const renderPopUp=()=>{
     document.getElementById("popup").innerHTML=contenido
 }
 
-const notificacion=()=>{
+const notificacionPeces=()=>{
   Swal.fire({
       title: "Producto Agregado Correctamente al Carrito",
       icon: "success"
